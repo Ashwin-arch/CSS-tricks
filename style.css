@@ -1,0 +1,88 @@
+:root {
+    --primary: #007bff;
+    --secondary: #0056b3;
+    --gap: 1rem;
+    --transition-speed: 0.3s;
+  }
+  
+  /* Base */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background: var(--primary);
+    padding: 1rem;
+    text-align: center;
+  }
+  nav a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+  }
+  
+  /* Main content */
+  main {
+    padding: 2rem var(--gap);
+  }
+  section {
+    margin-bottom: 2rem;
+  }
+  pre {
+    background: #eee;
+    padding: 1rem;
+    overflow-x: auto;
+  }
+  
+  /* Flexbox & Grid */
+  .container { display: flex; }
+  .wrapper   { display: grid; }
+  
+  /* Buttons with transition */
+  button {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    transition: background var(--transition-speed) ease;
+  }
+  button:hover {
+    background: var(--secondary);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  .box {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Advanced Effects */
+  .shadow-box {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    clip-path: circle(50%);
+  }
+  .text-fancy {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .container { flex-direction: column; }
+  }
+  
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+  

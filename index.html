@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Documentation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>CSS Documentation</h1>
+    <nav>
+      <a href="#syntax">Syntax</a>
+      <a href="#selectors">Selectors</a>
+      <a href="#properties">Properties</a>
+      <a href="#flexbox">Flexbox</a>
+      <a href="#grid">Grid</a>
+      <a href="#responsive">Responsive</a>
+      <a href="#transitions">Transitions</a>
+      <a href="#animations">Animations</a>
+      <a href="#advanced">Advanced Effects</a>
+      <a href="#typography">Typography</a>
+      <a href="#forms">Forms</a>
+      <a href="#scrolling">Scrolling</a>
+    </nav>
+  </header>
+
+  <main>
+    <main>
+        <section id="syntax">
+          <h2>Syntax</h2>
+          <p>CSS ruleset has a selector and a declaration block.</p>
+          <pre><code>selector {
+      property: value;
+    }</code></pre>
+        </section>
+    
+        <section id="selectors">
+          <h2>Selectors</h2>
+          <ul>
+            <li><code>*</code> - Universal</li>
+            <li><code>#id</code> - ID Selector</li>
+            <li><code>.class</code> - Class Selector</li>
+            <li><code>element</code> - Tag Selector</li>
+          </ul>
+        </section>
+    
+        <section id="properties">
+          <h2>Common Properties</h2>
+          <ul>
+            <li><code>color</code> - Text color</li>
+            <li><code>background-color</code> - Background color</li>
+            <li><code>margin</code> - Space outside the element</li>
+            <li><code>padding</code> - Space inside the element</li>
+            <li><code>font-size</code> - Size of text</li>
+          </ul>
+        </section>
+    
+        <section id="examples">
+          <h2>Examples</h2>
+          <p>Here is how you style a paragraph:</p>
+          <pre><code>p {
+      color: blue;
+      font-size: 18px;
+    }</code></pre>
+        </section>
+      </main>
+    
+    <!-- Existing sections omitted for brevity -->
+
+    <section id="flexbox">
+      <h2>Flexbox</h2>
+      <p>One‑dimensional layout for rows or columns. Use <code>display: flex;</code> on a container :contentReference[oaicite:10]{index=10}.</p>
+      <pre><code>
+.container { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+      </code></pre>
+    </section>
+
+    <section id="grid">
+      <h2>Grid</h2>
+      <p>Two‑dimensional layout with rows and columns. Use <code>display: grid;</code> and <code>grid-template</code> shorthand :contentReference[oaicite:11]{index=11}.</p>
+      <pre><code>
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+}
+      </code></pre>
+    </section>
+
+    <section id="responsive">
+      <h2>Responsive Design</h2>
+      <p>Media queries adapt styles to different screen sizes :contentReference[oaicite:12]{index=12}.</p>
+      <pre><code>
+@media (max-width: 600px) {
+  .container { flex-direction: column; }
+}
+      </code></pre>
+    </section>
+
+    <section id="transitions">
+      <h2>CSS Transitions</h2>
+      <p>Smoothly animate property changes with <code>transition</code> :contentReference[oaicite:13]{index=13}.</p>
+      <pre><code>
+button {
+  background: #007bff;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #0056b3;
+}
+      </code></pre>
+    </section>
+
+    <section id="animations">
+      <h2>CSS Animations</h2>
+      <p>Define keyframes and control timing with the <code>animation</code> shorthand :contentReference[oaicite:14]{index=14}.</p>
+      <pre><code>
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.box {
+  animation: fadeIn 2s ease-in-out;
+}
+      </code></pre>
+    </section>
+
+    <section id="advanced">
+      <h2>Advanced Styling Effects</h2>
+      <ul>
+        <li><code>box-shadow</code>, <code>text-shadow</code> :contentReference[oaicite:15]{index=15}</li>
+        <li><code>filter: blur(5px);</code>, <code>mix-blend-mode: multiply;</code> :contentReference[oaicite:16]{index=16}</li>
+        <li><code>clip-path: circle(50%);</code></li>
+      </ul>
+    </section>
+
+    <section id="typography">
+      <h2>Typography Features</h2>
+      <pre><code>
+h1 {
+  font-feature-settings: 'smcp' 1;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+      </code></pre>
+      <p>Control OpenType features with <code>font-feature-settings</code> :contentReference[oaicite:17]{index=17}.</p>
+    </section>
+
+    <section id="forms">
+      <h2>Form Styling</h2>
+      <p>Customize checkboxes, radio buttons, selects, etc. :contentReference[oaicite:18]{index=18}.</p>
+      <pre><code>
+input[type="checkbox"] {
+  accent-color: #007bff;
+}
+      </code></pre>
+    </section>
+
+    <section id="scrolling">
+      <h2>Smooth Scrolling</h2>
+      <p>Enable native smooth jumps with <code>scroll-behavior</code> :contentReference[oaicite:19]{index=19}.</p>
+      <pre><code>
+html {
+  scroll-behavior: smooth;
+}
+      </code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CSS Docs</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
